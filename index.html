@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>פורטפוליו וידאו</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">פורטפוליו וידאו מקצועי</p>
+        <h1>תיק עבודות של אופק אלון</h1>
+        <p class="hero-copy">גלול, סנן ותצוגת וידאו עשירה בכל מכשיר — נייד או דסקטופ.</p>
+      </div>
+    </header>
+
+    <section class="filter-bar" aria-label="ניווט נושאים">
+      <button class="filter-btn active" data-category="all">הכל</button>
+      <button class="filter-btn" data-category="אגד (אפליקצית egg)">אגד</button>
+      <button class="filter-btn" data-category="אלפיט טויס - ייבוא ושיווק צעצועים">אלפיט טויס</button>
+      <button class="filter-btn" data-category="אפליקצית לימוד אנגלית">אפליקצית לימוד אנגלית</button>
+      <button class="filter-btn" data-category="בורגר סאלון">בורגר סאלון</button>
+      <button class="filter-btn" data-category="חנות צעצועים בחיפה">חנות צעצועים בחיפה</button>
+      <button class="filter-btn" data-category="מנדלה דאפו">מנדלה דאפו</button>
+      <button class="filter-btn" data-category="סופר טוי- צעצועים ומשחקים">סופר טוי</button>
+      <button class="filter-btn" data-category="סופר קארפור">סופר קארפור</button>
+      <button class="filter-btn" data-category="עידן 2000">עידן 2000</button>
+    </section>
+
+    <main>
+      <section class="grid" id="videoGrid" aria-label="כרטיסי וידאו"></section>
+    </main>
+
+    <section class="leads-section">
+      <div class="leads-card">
+        <p class="eyebrow">צור קשר</p>
+        <h2 class="leads-title">מעוניין בסרטון לעסק שלך?</h2>
+        <p class="leads-sub">השאר פרטים ואחזור אליך בהקדם</p>
+        <form class="leads-form" id="leadsForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="leadName">שם מלא</label>
+              <input type="text" id="leadName" name="name" placeholder="ישראל ישראלי" required />
+            </div>
+            <div class="form-field">
+              <label for="leadPhone">טלפון</label>
+              <input type="tel" id="leadPhone" name="phone" placeholder="050-0000000" required />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="leadEmail">אימייל</label>
+            <input type="email" id="leadEmail" name="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-field">
+            <label for="leadMessage">במה אוכל לעזור?</label>
+            <textarea id="leadMessage" name="message" rows="4" placeholder="ספר לי קצת על הפרויקט..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn">שלח פנייה</button>
+          <p class="form-success" id="formSuccess" hidden>תודה! קיבלתי את הפנייה ואחזור אליך בקרוב.</p>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
